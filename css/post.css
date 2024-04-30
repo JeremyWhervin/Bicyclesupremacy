@@ -72,7 +72,21 @@ html {
 }
 body {
     background-color: var(--clr-base-100);
-    /* position: relative; */
+}
+.black {
+    background-color: var(--clr-grey);
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+
+    div {
+        height: 1rem;
+        width: 1rem;
+        background-color: white;
+        margin-left: 1rem;
+        margin-block: 1rem;
+        border-radius: 1000%;
+    }
 }
 header {
     padding-top: 2rem;
