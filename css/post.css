@@ -49,13 +49,7 @@ html {
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-    width: .5rem;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #F15A24;
+    display: none;
 }
 * {
     font-family: var(--ff-400);
@@ -149,4 +143,78 @@ img {
     aspect-ratio: 16/9;
     display: block;
     transition: 350ms;
+}
+
+.comment-section {
+    padding: 20px;
+    margin-inline: 4rem;
+
+    h3 {
+        font-size: var(--fs-XL);
+        margin-bottom: 4rem;
+    }
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+.comment-details {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 1rem;
+
+    span {
+        font-size: var(--fs-500);
+    }
+}
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-date {
+    margin-left: 10px;
+    color: #888;
+}
+
+.comment-content {
+    width: 70ch;
+}
+
+.comment-form {
+    margin-top: 3rem;
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--clr-orange);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }

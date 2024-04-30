@@ -263,15 +263,45 @@ marquee {
 @media (width<=800px) {
     section.second {
         .content-grid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            display: block;
+            /* grid-template-columns: repeat(1, 1fr); */
             .content {
                 .grabber {
                     img {
                         aspect-ratio: 2/1;
+                        max-width: 100%;
+                        object-fit: cover;
+                        display: block;
+                        transition: 350ms;
                     }
                 }
             }
+        }
+    }
+}
+
+@media (width<=590px) {
+    section.second {       
+        .content-grid {        
+            .content { 
+                .bottom-flex {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+@media (width<=800px) {
+    footer {
+        .splitter {
+            display: block;
         }
     }
 }
