@@ -74,14 +74,20 @@ body {
     background-color: var(--clr-base-100);
     /* position: relative; */
 }
-.back-text {
-    font-size: 20rem;
-    color: rgba(0, 0, 0, 0.196);
-    position: absolute;
-    z-index: -1;
-            left: 50%;
-            transform: translate(-50%);
-            text-align: center;
+header {
+    padding-top: 2rem;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2rem;
+
+        a {
+            font-family: var(--ff-800);
+            color: #F15A24;
+            font-size: var(--fs-400);
+        }
+    }
 }
 .post {
     /* margin-top: 10rem; */
